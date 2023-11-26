@@ -1,0 +1,143 @@
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    background-color: var(--gray-dark);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head{
+    margin: 2vh;
+    position: relative;
+
+}
+.head-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.9em;
+    margin-bottom: 2vh;
+}
+#time{
+    color:var(--light);
+}
+h2{
+    color: var(--white);
+    margin: 2vh 0vh;
+}
+main h2{
+    align-self: start;
+    margin: 0.5em 1.5em !important;
+}
+#task-input{
+    color:var(--light);
+    font-size: 1em;
+    font-weight:bold;
+    min-width: 38em;
+    height: 2.5em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background:var(--gray);
+}
+#task-submit{
+    font-size: 1em;
+    height: 2em;
+    border: none;
+    background:none;
+    color: var(--pink);
+    font-weight:bolder;
+}
+main{
+    margin: 2vh;
+    margin-top: 0%;
+    width: 46em;
+    height: 26em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+.tasks{
+    color:var(--light);
+    font-size: 1em;
+    font-weight:bold;
+    min-width: 30em;
+    height: 2em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background:var(--gray);
+}
+button{
+    margin-left: 0.5em;
+    font-size: 1em;
+    height: 2em;
+    border: none;
+    background:none;
+    font-weight:bolder;
+}
+.edit{
+    color: var(--cyan);
+}
+.delete{
+    color: var(--red);
+}
+.complete{
+    color: var(--primary);
+}
+.restore{
+    color: var(--yellow);
+}
+#complete-section{
+    height: 2.4em;
+    width: 46em;
+    position: absolute;
+    bottom: 0;
+    overflow-y: hidden;
+    transition: height 500ms linear 0s;
+}
+#complete-section:hover{
+    height:13em;
+    overflow-y: auto;
+    
+}
+.list{
+    margin: 5px 0vh;
+}
+legend{
+    color: var(--light);
+    font-size: 2em;
+}
