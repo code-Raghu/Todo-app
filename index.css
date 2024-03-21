@@ -119,7 +119,7 @@ button{
     color: var(--primary);
 }
 .restore{
-    color: var(--yellow);
+    color: var(--red);
 }
 #complete-section{
     height: 2.4em;
